@@ -1,0 +1,75 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Users",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44358"
+        }
+
+      ],
+      "UpstreamPathTemplate": "/etudiant",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44358"
+        }
+
+      ],
+      "UpstreamPathTemplate": "/etudiant/{id}",
+      "UpstreamHttpMethod": [
+        "Put",
+        "Delete"
+
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Filieres",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44358"
+        }
+
+      ],
+      "UpstreamPathTemplate": "/filiere",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Filieres/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44358"
+        }
+
+      ],
+      "UpstreamPathTemplate": "/filiere/{id}",
+      "UpstreamHttpMethod": [
+        "Put",
+        "Delete"
+
+      ]
+
+    }
+  ]
+}
+  
